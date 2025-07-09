@@ -1,0 +1,8 @@
+# Directional variogram with 60° tolerance
+directional_variogram <- variog4(s256i, directions = c(60), tolerance = pi / 6)
+plot(directional_variogram, type = "l", main = "Directional Variogram (60°)")
+
+# Multidirectional variogram
+multi_vario <- variog4(s256i, directions = c(0, 45, 90, 135))
+plot(multi_vario, main = "Multidirectional Variogram")
+
